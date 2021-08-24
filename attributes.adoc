@@ -1,0 +1,8 @@
+:important-caption: :closed_book:
+:tip-caption: :ledger:
+:note-caption: :blue_book:
+:toc: macro
+:toc-title:
+:toclevels: 4
+:sectnumlevels: 4
+
