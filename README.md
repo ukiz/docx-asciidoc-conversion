@@ -31,7 +31,7 @@ An important issue encountered is that it is not possible for a generic docx to 
     ```shell
     python post_pandoc.py md_2_pandoc.adoc md_2_styles.md attributes.adoc
     ```
-
+1. Replace `image1.wmf` image with a *png* version in the `media` folder.
 
 #### Files
 
