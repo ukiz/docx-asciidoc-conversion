@@ -203,6 +203,9 @@ def do_sections():
     output = output.replace('**INSPIRE**\n\n*Infrastructure for Spatial Information in Europe*', 
         '**INSPIRE**\n*Infrastructure for Spatial Information in Europe*')
 
+    # remove other Pandoc garbage
+    output = output.replace('* +\n*\n', '')
+
     return output       
 
 with open(PATH + 'attributes.adoc', 'r', encoding='utf8') as inAttributes:

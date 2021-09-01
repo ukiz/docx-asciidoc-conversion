@@ -978,8 +978,6 @@ For options 1 and 2 the character string content of elements shall be provided i
 
 For convenience and requirement text brevity reasons a special reserved term "Non-empty Free Text Element" is used in this document where any of these three options is allowed.
 
-* +
-*
 
 [source,xml,subs="+quotes"]
 ----
@@ -2346,8 +2344,6 @@ If the spatial resolution is an interval, both bounding values of the interval s
 ----
 *Example* *3.5:* Spatial resolution of a data set expressed using distance.
 
-* +
-*
 
 [source,xml,subs="+quotes"]
 ----
@@ -2643,8 +2639,6 @@ If declaring conformity to an abstract test suite or a conformance class using a
 
 NOTE It is not currently planned to provide pre-defined XML fragments containing the _CI_Citation_ elements for the INSPIRE TG documents in the http://inspire.ec.europa.eu/id/citation/ namespace. However, such fragments can be added if this is deemed useful by INSPIRE data providers.
 
-* +
-*
 
 [source,xml,subs="+quotes"]
 ----
@@ -3585,8 +3579,6 @@ If provided, the _gmd:CI_OnLineFunctionCode_ element should point to one of the 
 The URL provided as the value of the _gmd:transferOptions_/_gmd:MD_DigitalTransferOptions_/_gmd:onLine_/_gmd:CI_OnlineResource_/_gmd_: _linkage_/_gmd:URL_ element should point to one of following type of resources:- a service metadata (capabilities) document of described Spatial Data Service,- a service WSDLfootnote:[W3C Web Services Description Language, https://www.w3.org/TR/wsdl] document of the described Spatial Data Service (if SOAPfootnote:[W3C Simple Object Access Protocol, or more recently, just SOAP, https://www.w3.org/TR/soap/] binding is available), or - a web page with further instructions for accessing the described service.
 ====
 
-* +
-*
 
 [source,xml,subs="+quotes"]
 ----
@@ -4035,8 +4027,6 @@ The degree of conformity as specified by TG Requirement C.22footnote:[TG Require
 The multiplicity of the _gmd:report_/_gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult_ element used for the above purpose is 1.
 ====
 
-* +
-*
 
 *Table* *4.1:* The language-neutral names and the URIs of the Invocable Spatial Data Service categories.
 
