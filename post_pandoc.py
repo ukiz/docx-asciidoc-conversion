@@ -1,7 +1,5 @@
-import re
+import re, sys
 from bs4 import BeautifulSoup
-
-PATH = 'C:/projects/artefacts/'
 
 def do_styles(style, title_re, star_replacement, admonition):
     req_count = 0
@@ -208,20 +206,19 @@ def do_sections():
 
     return output       
 
-with open(PATH + 'attributes.adoc', 'r', encoding='utf8') as inAttributes:
+with open(sys.argv[3], 'r', encoding='utf8') as inAttributes:
     adoc = inAttributes.read()
-with open(PATH + 'md_2_styles.md', 'r', encoding='utf8') as inStyles:
+with open(sys.argv[2], 'r', encoding='utf8') as inStyles:
     md = inStyles.read()
-with open(PATH + 'md_2_pandoc.adoc', 'r', encoding='utf8') as inTarget:
+with open(sys.argv[1], 'r', encoding='utf8') as inTarget:
     adoc += inTarget.read()
 
-    adoc = do_sections()
-    adoc = do_styles('TG Requirement', r'\*\*TG Requirement', '__', 'IMPORTANT')
-    adoc = do_styles('TG Recommendation', r'\*\*TG Recommendation', '__', 'TIP')
-    adoc = do_styles('Conformance class', r'\*\*Conformance Class', '_', 'NOTE')
-    adoc = do_xml()
-    adoc = do_quotes()
+adoc = do_sections()
+adoc = do_styles('TG Requirement', r'\*\*TG Requirement', '__', 'IMPORTANT')
+adoc = do_styles('TG Recommendation', r'\*\*TG Recommendation', '__', 'TIP')
+adoc = do_styles('Conformance class', r'\*\*Conformance Class', '_', 'NOTE')
+adoc = do_xml()
+adoc = do_quotes()
 
-    with open(PATH + 'md_2_final.adoc', 'w', encoding='utf8') as output:
-        output.write(adoc)
-
+with open('md_2_final.adoc', 'w', encoding='utf8') as output:
+    output.write(adoc)
