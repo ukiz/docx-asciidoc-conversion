@@ -10,6 +10,7 @@ An important issue encountered is that it is not possible for a generic docx to 
 
 - [Pandoc](https://pandoc.org/), version 2.14.0.3 used
 - Python 3, version 3.8.3 used
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) Python library, version 4.9.3 used
 
 ### Conversion Procedure
 
